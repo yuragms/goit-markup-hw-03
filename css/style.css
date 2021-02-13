@@ -1,0 +1,198 @@
+/* Цвет первых трех букв логотипа, активной навигации голубой #2196F3*/
+/* Цвет studio букв логотипа черный #000000*/
+/* Цвет навигации и заголовков черный #212121*/
+/* Цвет телефона и текста серый #757575*/
+/* Цвет текста белый #ffffff*/
+/* Цвет бекграунда в секциях темный #2F303A*/
+/* Цвет бекграунда в секциях светлый #E5E5E5 */
+/* Цвет бекграунда в светлых кнопках #F5F4FA*/
+:root {
+  --primary-text-color: #757575;
+  --primary-title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+  --primary-black-color: #000000;
+  --bg-section-color: #2f303a;
+  --bg-white-section-color: #f5f4fa;
+  --telmail-footer-color: rgba(255, 255, 255, 0.6);
+}
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+  font-family: Roboto, cursive;
+  letter-spacing: 0.03em;
+}
+.logo {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-family: Raleway, cursive;
+  font-size: 26px;
+  line-height: 1.19;
+}
+span {
+  color: var(--primary-black-color);
+}
+.site-nav {
+  color: var(--primary-title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.site-nav:hover,
+.site-nav:hover:focus {
+  color: var(--accent-color);
+}
+
+.site-nav.current {
+  color: var(--accent-color);
+}
+.auth-nav {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+}
+.auth-nav:hover,
+.auth-nav:hover:focus {
+  color: var(--accent-color);
+}
+ul {
+  list-style: none;
+}
+.title-index {
+  color: var(--primary-white-color);
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.37;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.prim-section {
+  background-color: var(--bg-section-color);
+}
+.link-prim-section {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
+.advantage {
+  color: var(--primary-title-text-color);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: left;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71px;
+  text-align: left;
+}
+.title-doing {
+  color: var(--primary-title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+.title-comand {
+  color: var(--primary-title-text-color);
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.17;
+  text-align: center;
+}
+.persons {
+  color: var(--primary-title-text-color);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  text-align: center;
+}
+.prof-persons {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.17;
+  text-align: center;
+}
+.comand-section {
+  background-color: var(--bg-white-section-color);
+}
+footer {
+  background-color: var(--bg-section-color);
+}
+.span-footer {
+  color: var(--primary-white-color);
+}
+.adress {
+  color: var(--primary-white-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: left;
+}
+address {
+  font-style: normal;
+}
+.auth-nav-footer {
+  color: var(--telmail-footer-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-align: left;
+}
+.auth-nav-footer:hover,
+.auth-nav-footer:hover:focus {
+  color: var(--accent-color);
+}
+.button-works {
+  background-color: var(--bg-white-section-color);
+  color: var(--primary-title-text-color);
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.62;
+  text-align: center;
+}
+.button-works:hover,
+.button-works:hover:focus {
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
+  border: none;
+}
+.title-works {
+  color: var(--primary-title-text-color);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  text-align: left;
+}
+.kind-works {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.19;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
