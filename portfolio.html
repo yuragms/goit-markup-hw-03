@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,30 +9,36 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <!--Шрифты найденые в макете Raleway700,( по ошибке дизайнера не используем OleoScript400) , Roboto400,500,700,900 Script-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
-        <a href="./index.html" class="logo">Web<span>Studio</span></a>
-        <nav>
-        <ul>
-            <li><a href="./index.html" class="site-nav">Студия</a></li>
-            <li><a href="./portfolio.html" class="site-nav current">Портфолио</a></li>
-            <li><a href="#" class="site-nav list">Контакты</a></li>
-        </ul>
-    </nav>
-        <ul>
-            <li><a href="mailto:info@devstudio.com" class="auth-nav">info@devstudio.com</a></li>
-            <li><a href="tel:+380991111111" class="auth-nav">+38 099 111 11 11</a></li>
-        </ul>
+        <div class="container header">
+            <a href="./index.html" class="logo">Web<span>Studio</span></a>
+            <nav>
+                <ul class="site-nav"> 
+                    <li class="item"><a href="./index.html" class="link">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link current">Портфолио</a></li>
+                    <li class="item"><a href="#" class="link">Контакты</a></li>
+                </ul>
+            </nav>
+            <ul class="auth-nav">
+                <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+                <li class="item"><a href="tel:+380991111111" class="link">+38 099 111 11 11</a></li>
+            </ul>
+        </div>
     </header>
     <main>
    <section>
+    <div class="container">
 
 
      <!--Список кнопок дать ховер и фокус при наведении-->
 
-<ul>
+<ul class="filter">
     <li><button type="button" class="button-works">Все</button></li>
     <li><button type="button" class="button-works">Веб-сайты</button></li>
     <li><button type="button" class="button-works">Приложения</button></li>
@@ -41,55 +48,59 @@
 
      <!--Список карточек работ-->
 
-     <ul>
-         <li><a href="#"><img src="./images/project-1.jpg" alt="Технокряк" width="370"/>
-            <h3 class="title-works">Технокряк</h3>
-            <p class="kind-works">Веб-сайт</p></a>
+     <ul class="works-list">
+         <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-1.jpg" alt="Технокряк" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Технокряк</h3>
+            <p class="kind-works">Веб-сайт</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-2.jpg" alt="Постер New Orlean vs Golden Star" width="370"/>
-            <h3 class="title-works">Постер New Orlean vs Golden Star</h3>
-            <p class="kind-works">Дизайн</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-2.jpg" alt="Постер New Orlean vs Golden Star" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Постер New Orlean vs Golden Star</h3>
+            <p class="kind-works">Дизайн</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-3.jpg" alt="Ресторан Seafood" width="370"/>
-            <h3 class="title-works">Ресторан Seafood</h3>
-            <p class="kind-works">Приложение</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-3.jpg" alt="Ресторан Seafood" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Ресторан Seafood</h3>
+            <p class="kind-works">Приложение</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-4.jpg" alt="Проект Prime" width="370"/>
-            <h3 class="title-works">Проект Prime</h3>
-             <p class="kind-works">Маркетинг</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-4.jpg" alt="Проект Prime" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Проект Prime</h3>
+             <p class="kind-works">Маркетинг</p></div></a></article>
             </li>
-        <li><a href="#"><img src="./images/project-5.jpg" alt="Проект Boxes" width="370"/>
-            <h3 class="title-works">Проект Boxes</h3>
-            <p class="kind-works">Приложение</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-5.jpg" alt="Проект Boxes" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Проект Boxes</h3>
+            <p class="kind-works">Приложение</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-6.jpg" alt="Inspiration has no Borders" width="370"/>
-            <h3 class="title-works">Inspiration has no Borders</h3>
-            <p class="kind-works">Веб-сайт</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-6.jpg" alt="Inspiration has no Borders" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Inspiration has no Borders</h3>
+            <p class="kind-works">Веб-сайт</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-7.jpg" alt="Издание Limited Edition" width="370"/>
-            <h3 class="title-works">Издание Limited Edition</h3>
-            <p class="kind-works">Дизайн</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-7.jpg" alt="Издание Limited Edition" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Издание Limited Edition</h3>
+            <p class="kind-works">Дизайн</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-8.jpg" alt="Проект LAB" width="370"/>
-            <h3 class="title-works">Проект LAB</h3>
-            <p class="kind-works">Маркетинг</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-8.jpg" alt="Проект LAB" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Проект LAB</h3>
+            <p class="kind-works">Маркетинг</p></div></a></article>
         </li>
-        <li><a href="#"><img src="./images/project-9.jpg" alt="Growing Business" width="370"/>
-            <h3 class="title-works">Growing Business</h3>
-            <p class="kind-works">Приложение</p></a>
+        <li><article class="card-works"><a href="#"><div class="work-thumb"><img src="./images/project-9.jpg" alt="Growing Business" width="370"/></div>
+            <div class="work-disc"><h3 class="title-works">Growing Business</h3>
+            <p class="kind-works">Приложение</p></div></a></article>
         </li>
      </ul>
+    </div>
 
    </section>
     </main>
     <footer>
+        <div class="container">
         <a href="./index.html" class="logo">Web<span class="span-footer">Studio</span></a>
+        
         <address>
             <p class="adress">г. Киев, пр-т Леси Украинки, 26</p>
-            <a href="mailto:info@example.com"  class="auth-nav-footer">info@example.com</a>
-            <a href="tel:+380991111111"  class="auth-nav-footer">+38 099 111 11 11</a>
-        </address>
+            <a href="mailto:info@example.com" class="auth-nav-footer">info@example.com</a><br>
+            <a href="tel:+380991111111" class="auth-nav-footer">+38 099 111 11 11</a>
         
+        </address>
+        </div>
     </footer>
 </body>
 </html>
