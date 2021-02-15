@@ -62,6 +62,7 @@ body {
 .header {
   display: flex;
   align-items: center;
+  min-height: 80px;
 }
 .header ul {
   display: flex;
@@ -86,8 +87,6 @@ span {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .site-nav .link:hover,
 .site-nav:hover:focus {
@@ -111,8 +110,6 @@ span {
   font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
-  margin-top: 32px;
-  margin-bottom: 32px;
 }
 .auth-nav .link:hover,
 .auth-nav .link:hover:focus {
@@ -123,6 +120,9 @@ span {
 }
 
 /* Hero*/
+.prim {
+  min-height: 600px;
+}
 
 .prim-section {
   background-color: var(--bg-section-color);
@@ -137,7 +137,6 @@ span {
   letter-spacing: 0.06em;
   text-align: center;
   margin-bottom: 30px;
-  margin-top: 0;
   padding-top: 200px;
 }
 
@@ -152,10 +151,12 @@ span {
   text-align: center;
   padding: 10px 32px;
   border-radius: 4px;
-  margin-bottom: 200px;
 }
 
 /* advantage*/
+.advant {
+  min-height: 300px;
+}
 
 .visually-hidden {
   position: absolute;
@@ -172,11 +173,11 @@ span {
 
 .advantage-list {
   display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantage-list li {
-  padding-top: 94px;
-  padding-bottom: 94px;
   width: 270px;
 }
 
@@ -202,6 +203,9 @@ span {
 }
 
 /* Doing*/
+.doing {
+  min-height: 480px;
+}
 
 .title-doing {
   color: var(--primary-title-text-color);
@@ -216,12 +220,15 @@ span {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: 94px;
 }
 
 /* Comand*/
 .comand-section {
   background-color: var(--bg-white-section-color);
+}
+
+.comand {
+  min-height: 648px;
 }
 .title-comand {
   color: var(--primary-title-text-color);
@@ -230,7 +237,7 @@ span {
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
-  margin-top: 94px;
+  padding-top: 94px;
 }
 
 .comand-list {
@@ -268,6 +275,9 @@ span {
 footer {
   background-color: var(--bg-section-color);
 }
+.footer {
+  min-height: 252px;
+}
 
 footer .logo {
   display: inline-block;
@@ -288,7 +298,6 @@ footer .logo {
 }
 address {
   font-style: normal;
-  margin-bottom: 51px;
 }
 .auth-nav-footer {
   display: inline-block;
@@ -299,9 +308,6 @@ address {
   text-align: left;
   margin-bottom: 9px;
 }
-.auth-nav-footer:last-child {
-  margin-bottom: 60px;
-}
 
 .auth-nav-footer:hover,
 .auth-nav-footer:hover:focus {
@@ -309,6 +315,10 @@ address {
 }
 
 /* portfolio*/
+
+.works {
+  min-height: 1548px;
+}
 
 .button-works {
   background-color: var(--bg-white-section-color);
@@ -349,8 +359,8 @@ a {
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
-  margin-bottom: 50px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
 .filter li:not(:last-child) {
   margin-right: 8px;
@@ -363,7 +373,6 @@ a {
   flex-wrap: wrap;
   margin-left: -15px;
   margin-top: -15px;
-  margin-bottom: 94px;
 }
 
 .works-list li {
